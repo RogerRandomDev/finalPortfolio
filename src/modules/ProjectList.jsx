@@ -1,15 +1,19 @@
 
 import anime from 'animejs/lib/anime.es.js';
-function ProjectList(){
+function ProjectList(props){
     var out=[]
-    const childCount=6
-    for(let i=1;i<childCount;i++){
-        var rot=(180-180*i/ childCount - 90)
-        var transformBy=-(Math.sin(Math.abs(rot)*Math.PI/180))*Math.sign(rot)*100
-        console.log(transformBy)
-        out.push(<div key={i} className="projectCard" style={{"transform":`rotateY(${rot}deg)`,margin:`0% ${transformBy}% `}}>aaa</div>)
-    }
-    return <div className="flex">{out}</div>;
+    out=props.projects.map((project,i)=>{
+
+        return (
+            <a key={i+"p"} className="flex flex-col w-48 h-60 text-xl bg-gray-800 drop-shadow hover:drop-shadow-lg duration-300" href={project.projectLink}>
+                <p>{project.name}</p>
+                <img src={project.imageLink} className="m-auto max-h-40 max-w-[36.4rem]"/>
+                <p className="bottom-0 relative">{project.projectType}</p>
+            </a>
+        )
+    })
+    
+    return <div className="flex gap-2">{out}</div>;
 }
 
 

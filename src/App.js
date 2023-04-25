@@ -6,21 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-          
-        </a>
-        <ProjectList />
-        <Skill />
+        <ProjectList projects={[{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"}]} />
+        <Skill skillList={[{"level":0.9,"name":"test"},{"level":0.9,"name":"test2"},{"level":0.9,"name":"test32"},{"level":0.9,"name":"testinge"}]}/>
       </header>
     </div>
   );
