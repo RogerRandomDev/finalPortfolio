@@ -29,28 +29,14 @@
             "level":0.95
         }
     ],
-    "Engines":[
-        {
-            "name":"Godot",
-            "level":0.95
-        },
-        {
-            "name":"Unity",
-            "level":0.5
-        },
-        {
-            "name":"HTML",
-            "level":0.7
-        }
-    ],
     "Tools":[
         {
             "name":"Blender",
-            "level":0.75
+            "level":0.65
         },
         {
             "name":"BlockBench",
-            "level":0.8
+            "level":0.76
         },
         {
             "name":"Aseprite",
@@ -63,28 +49,6 @@
         {
             "name":"AnimeJS",
             "level":0.9
-        }
-    ],
-    "Capabilities":[
-        {
-            "name":"Shaders",
-            "level":0.6
-        },
-        {
-            "name":"Scripting",
-            "level":0.9
-        },
-        {
-            "name":"Debugging",
-            "level":0.6
-        },
-        {
-            "name":"Documentation",
-            "level":0.7
-        },
-        {
-            "name":"Commenting",
-            "level":0.65
         }
     ]
     
