@@ -24,16 +24,38 @@ function ProjectList(props){
             </a>
         )
     })
+    var alreadyShaky=false
+    useEffect(()=>{
+        const floaty=document.getElementsByClassName("floatyText")[0]
+        floaty.innerHTML=floaty.textContent.replace(/\S/g,'<div class="floatingText inline-block">$&</div>')
+        if(alreadyShaky){return}
+        alreadyShaky=true
+        setTimeout(() => {
+            anime.timeline({loop: true})
+            .add({
+                targets: '.floatingText',
+                color:['#aff','#aaf','#faa','#ffa','#ffa'],
+                translateY:[0,8,0,-8,0],
+                easing: "linear",
+                duration: 500,
+                delay: anime.stagger(37.5)
+            })    
+        }, 50);
+        
+    },[])
     
     return <> 
     <div className="mb-5">
        <h1 className="text-5xl">MY PROJECTS</h1>
-    <p>Open Source, Find on my <a href="https://github.com/RogerRandomDev">GITHUB</a></p>
+    <p className="inline">Open Source, Find on my <a href="https://github.com/RogerRandomDev" className="floatyText">GitHub</a></p>
     </div>
+    {/*Stores the project list here*/}
     <div className={'w-[80rem] w-max-[100vw] border-2 border-gray-950 border-solid bg-gray-900 overflow-x-hidden mb-40'}
+    //begins motion for mobile devices
     onTouchStart={(ev)=>{
         lastTouch=ev
     }}
+    //moves on mobile devices
     onTouchMove={(ev)=>{
         if(!lastTouch){lastTouch=ev;return}
 
@@ -47,9 +69,11 @@ function ProjectList(props){
         setLastScroll(Date.now())
         updateCurrent(((currentShown-dir)-listLength-props.projects.length)%props.projects.length+listLength+props.projects.length)
     }}
+    //reset lasttouch to prevent issues
     onTouchEnd={(ev)=>{
         lastTouch=null
     }}
+    //scrolls horizontal for pc, and prevents scrolling when hovering
     onWheel={(ev)=>{
         var rect=ev.target.getBoundingClientRect();
         blockScroll=rect.y<=ev.clientY&&rect.y+rect.height>=ev.clientY

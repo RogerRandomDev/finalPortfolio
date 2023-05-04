@@ -50,6 +50,88 @@
             "name":"AnimeJS",
             "level":0.9
         }
+    ],
+    "Personal Qualities":[
+        {
+            "name":"Communication",
+            "level":0.8
+        },
+        {
+            "name":"Leadership",
+            "level":0.9
+        },
+        {
+            "name":"Hard Working",
+            "level":0.8
+        },
+        {
+            "name":"Teamwork",
+            "level":0.87
+        }
+    ],
+    "Learning Method":[
+        {
+            "name":"Reinvent the wheel",
+            "level":0.9
+        },
+        {
+            "name":"Reinvent the wheel",
+            "level":0.9
+        },
+        {
+            "name":"Reinvent the wheel",
+            "level":0.9
+        },
+        {
+            "name":"Reinvent the wheel",
+            "level":0.9
+        }
+    ],
+    "Truth":[
+        {
+            "name":"CHAOS",
+            "level":0.0
+        },
+        {
+            "name":"CHAOS",
+            "level":0.1
+        },
+        {
+            "name":"CHAOS",
+            "level":0.2
+        },
+        {
+            "name":"CHAOS",
+            "level":0.3
+        },
+        {
+            "name":"CHAOS",
+            "level":0.4
+        },
+        {
+            "name":"CHAOS",
+            "level":0.5
+        },
+        {
+            "name":"CHAOS",
+            "level":0.6
+        },
+        {
+            "name":"CHAOS",
+            "level":0.7
+        },
+        {
+            "name":"CHAOS",
+            "level":0.8
+        },
+        {
+            "name":"CHAOS",
+            "level":0.9
+        },
+        {
+            "name":"CHAOS",
+            "level":1.0
+        }
     ]
     
 }
