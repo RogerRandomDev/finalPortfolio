@@ -18,7 +18,7 @@ function ProjectList(props){
         var dist=1.-Math.abs((nI-listLength)/listLength)
         return (
             <a key={i+"project"} className="flex flex-col flex-shrink-0 min-w-48 min-h-60 h-60 w-48 text-xl bg-gray-800 drop-shadow hover:drop-shadow-lg duration-100" style={{"opacity":dist,'transform':`translateX(${-12.5*(offset%((listLength+1)*2)+i-(listLength))}rem)`}} href={project.projectLink}>
-                <p>{project.name+i}</p>
+                <p>{project.name}</p>
                 <img src={project.imageLink} className="m-auto max-h-40 max-w-[36.4rem]"/>
                 <p className="bottom-0 relative">{project.projectType}</p>
             </a>
@@ -27,6 +27,7 @@ function ProjectList(props){
     var alreadyShaky=false
     useEffect(()=>{
         const floaty=document.getElementsByClassName("floatyText")[0]
+        if(!floaty) return
         floaty.innerHTML=floaty.textContent.replace(/\S/g,'<div class="floatingText inline-block">$&</div>')
         if(alreadyShaky){return}
         alreadyShaky=true
@@ -46,8 +47,8 @@ function ProjectList(props){
     
     return <> 
     <div className="mb-5">
-       <h1 className="text-5xl">MY PROJECTS</h1>
-    <p className="inline">Open Source, Find on my <a href="https://github.com/RogerRandomDev" className="floatyText">GitHub</a></p>
+       <h1 className="text-5xl">{props.TITLE}</h1>
+    {(props.showInline?<p className="inline">Open Source, Find on my <a href="https://github.com/RogerRandomDev" className="floatyText">GitHub</a></p>:'')}
     </div>
     {/*Stores the project list here*/}
     <div className={'w-[80rem] w-max-[100vw] border-2 border-gray-950 border-solid bg-gray-900 overflow-x-hidden mb-40'}

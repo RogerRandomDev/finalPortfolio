@@ -35,11 +35,11 @@ function TitleCard(){
         anime.timeline({loop: true})
         .add({
           targets: '.myDesc .word',
-          translateY:[0,-4,0],
+          translateY:[0,-8,0],
           rotateY:[0,180,360],
           easing: "linear",
           duration: 400,
-          delay: (el, i) => 20 * i
+          delay: (el, i) => 25 * i
         });
     },4500)    
     },[])
@@ -47,7 +47,7 @@ function TitleCard(){
         <>
             
             <div className="min-w-[100vw] min-h-[100vh] max-w-[100vw] max-h-[100vh] overflow-y-hidden mb-40">
-                <img className="-mb-[100vh] min-w-[100vw] min-h-[100vh] h-[100vh]" src="https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-100679.jpg?w=360" />
+                <img className="-mb-[100vh] min-w-[100vw] min-h-[100vh] h-[100vh]" src="https://i.gifer.com/J4o.gif" />
                 <div className="mt-[40vh] -mt-[5rem] mx-auto w-max filter backdrop-blur-sm animatedTitle">
                     <h1 className="text-6xl myName flex flex-row center">Roger Grange</h1>
                     <p className="myDesc flex flex-row center">Maniacal plan to be determined</p>
