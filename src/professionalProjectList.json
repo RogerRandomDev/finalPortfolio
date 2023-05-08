@@ -1,0 +1,16 @@
+{
+    "projects":[
+        {
+            "name":"uBarter",
+            "projectType":"Web",
+            "imageLink":"https://ubarterfront.onrender.com/halfnoteblack.svg",
+            "projectLink":"https://ubarterfront.onrender.com/"
+        },
+        {
+            "name":"WestMEC-NE OpenHouse",
+            "projectType":"Web",
+            "imageLink":"https://ubarterfront.onrender.com/halfnoteblack.svg",
+            "projectLink":"https://westmec-ne-map.onrender.com"
+        }
+]
+}

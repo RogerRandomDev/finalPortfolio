@@ -17,9 +17,9 @@ function ProjectList(props){
         
         var dist=1.-Math.abs((nI-listLength)/listLength)
         return (
-            <a key={i+"project"} className="flex flex-col flex-shrink-0 min-w-48 min-h-60 h-60 w-48 text-xl bg-gray-800 drop-shadow hover:drop-shadow-lg duration-100" style={{"opacity":dist,'transform':`translateX(${-12.5*(offset%((listLength+1)*2)+i-(listLength))}rem)`}} href={project.projectLink}>
+            <a key={i+"project"} className="flex flex-col flex-shrink-0 min-w-48 max-w-48 min-h-60 h-60 w-48 text-xl bg-gray-800 drop-shadow hover:drop-shadow-lg duration-100" style={listLength<props.projects.length?{"opacity":dist,'transform':`translateX(${-12.5*(offset%((listLength+1)*2)+i-(listLength))}rem)`}:{'transform':'translateX(-6.25rem)'}} href={project.projectLink}>
                 <p>{project.name}</p>
-                <img src={project.imageLink} className="m-auto max-h-40 max-w-[36.4rem]"/>
+                <img src={project.imageLink} className="m-auto max-h-40 self-center"/>
                 <p className="bottom-0 relative">{project.projectType}</p>
             </a>
         )

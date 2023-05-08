@@ -4,15 +4,20 @@ import Skill from './modules/Skills';
 import ProjectList from './modules/ProjectList';
 import TitleCard from "./modules/TitleCard"
 import ContactInfo from './modules/Contact';
+import Resume from './modules/Resume'
+import ProjectListData from './ProjectList.json';
+import ProfessionalListData from './professionalProjectList.json';
 function App() {
   
   return (
     <div className="App max-w-[100vw] overflow-x-hidden">
       <header className="App-header">
         <TitleCard />
-        <ProjectList TITLE={'MY PROJECTS'} showInline={true} projects={[{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"}]} />
-        <ProjectList TITLE={'PAST WORK'} projects={[{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"},{'name':"test","projectType":"Web","imageLink":"","projectLink":"https://google.com/"}]} />
-        <Skill skillList={[{"level":0.9,"name":"test"},{"level":0.9,"name":"test2"},{"level":0.9,"name":"test32"},{"level":0.9,"name":"testinge"}]}/>
+        <div className="min-w-[100vw] border-solid border-gray-100 border-b-4 mb-40 shadow-2xl min-h-[4rem] -mt-[4rem] filter blur-xl"></div>
+        <ProjectList TITLE={'PERSONAL PROJECTS'} showInline={true} projects={ProjectListData.projects} />
+        <ProjectList TITLE={'PROFESSIONAL PROJECTS'} projects={ProfessionalListData.projects} />
+        <Resume />
+        <Skill/>
         <ContactInfo />
       </header>
     </div>
