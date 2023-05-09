@@ -6,8 +6,25 @@
         {
             "location":"McDonalds",
             "Accomplishments":[
-                "Absolutely nothing"
+                "Increased customer satisfaction"
             ]
         }
+    ],
+    "skills":[
+        "Fast Learner",
+        "Team Player",
+        "Hard Worker",
+        "Creative"
+    ],
+    "achievements":[
+        "Reached Nationals for FBLA Twice",
+        "Placed in State for FBLA Twice",
+        "First place in Regionals for FBLA in Computer Game and Simulation Programming",
+        "Second place in Regionals for FBLA in Marketing",
+        "Third place in Regionals for FBLA in Entrepeneurship",
+        "4th Place in State for FBLA in Marketing"
+    ],
+    "certifications":[
+        "MTA Certification"
     ]
 }
