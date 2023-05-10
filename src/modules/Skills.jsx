@@ -87,7 +87,7 @@ function Skill(){
                     {
                     //creates a button to change the current compiled points
                     Object.entries(SKILLS).map((s,i)=>{
-                    return <button className="w-32 min-w-[11rem] sm:w-40 text-center bg-gray-600 border-2 rounded-sm border-gray-700 m-0.5 drop-shadow-md hover:drop-shadow-lg h-24 hover:bg-gray-500 duration-150" key={i+"opt"} onMouseDown={()=>{
+                    return <button className="w-24 min-w-[6.5rem] sm:w-40 text-center bg-gray-600 border-2 rounded-sm border-gray-700 m-0.5 drop-shadow-md hover:drop-shadow-lg h-24 hover:bg-gray-500 duration-150" key={i+"opt"} onMouseDown={()=>{
                         //creates the new point set
                         var newPoints=compilePoints(SKILLS[s[0]]);
                         //animates points
@@ -103,7 +103,7 @@ function Skill(){
                     )
                 }
                 </div>
-                <div className="w-fit h-fit p-2 bg-gray-600 flex-grow min-h-[1rem] sm:min-h-[18rem]">
+                <div className="w-fit h-fit p-2 bg-gray-600 flex-grow min-h-[1rem] sm:min-h-[18rem] overflow-x-hidden">
                 <svg className="max-w-[62.5vw] w-64 h-[15rem] sm:h-fit sm:w-[25rem] max-h-[40rem] max-w-[100vw] m-auto lg:w-[45rem] " viewBox='-250 -150 500 300'>
                     <g fill='none' fillRule='evenodd'>
                         <polygon strokeWidth='1' style={{"fill":skillBackFill}} stroke={"#bebebe"} points='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0' className="skillPolygonBack0"></polygon>

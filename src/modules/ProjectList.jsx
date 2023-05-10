@@ -9,6 +9,7 @@ function ProjectList(props){
     const listLength=4;
     var a=null;
     var lastTouch=null;
+    //creates the scroll structure
     out=props.projects.map((project,i)=>{
         const activeDist=i-currentShown;
         
@@ -24,6 +25,7 @@ function ProjectList(props){
             </a>
         )
     })
+    //adds the github fancy text
     var alreadyShaky=false
     useEffect(()=>{
         const floaty=document.getElementsByClassName("floatyText")[0]
@@ -31,6 +33,7 @@ function ProjectList(props){
         floaty.innerHTML=floaty.textContent.replace(/\S/g,'<div class="floatingText inline-block">$&</div>')
         if(alreadyShaky){return}
         alreadyShaky=true
+        //creates the animation
         setTimeout(() => {
             anime.timeline({loop: true})
             .add({
