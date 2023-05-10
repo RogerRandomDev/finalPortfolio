@@ -34,10 +34,6 @@ function BackParticles(){
             fpsLimit: 30,
             interactivity: {
                 events: {
-                    onClick: {
-                        enable: true,
-                        mode: "push",
-                    },
                     onHover: {
                         enable: true,
                         mode: "repulse",
@@ -45,12 +41,9 @@ function BackParticles(){
                     resize: true,
                 },
                 modes: {
-                    push: {
-                        quantity: 4,
-                    },
                     repulse: {
                         distance: 200,
-                        duration: 0.4,
+                        duration: 1.,
                     },
                 },
             },
@@ -63,10 +56,10 @@ function BackParticles(){
                     distance: 150,
                     enable: true,
                     opacity: 0.9,
-                    width: 1,
+                    width: 5,
                 },
                 collisions: {
-                    enable: true,
+                    enable: false,
                 },
                 move: {
                     directions: "none",
@@ -81,18 +74,18 @@ function BackParticles(){
                 number: {
                     density: {
                         enable: true,
-                        area: 800,
+                        area: 1000,
                     },
-                    value: 40,
+                    value: 50,
                 },
                 opacity: {
-                    value: 0.5,
+                    value: 0.75,
                 },
                 shape: {
-                    type: "circle",
+                    type: "square",
                 },
                 size: {
-                    value: { min: 1, max: 5 },
+                    value: { min: 5, max: 20 },
                 },
             },
             detectRetina: true,
