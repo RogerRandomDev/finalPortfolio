@@ -5,8 +5,18 @@
     "workExperience":[
         {
             "location":"McDonalds",
+            "duration":"june 2022-july 2023",
+            "position":"crew member",
             "Accomplishments":[
                 "Increased customer satisfaction"
+            ]
+        },
+        {
+            "location":"Ziff Davis",
+            "duration":"July 2023-November 2023",
+            "position":"Intern, ZMG internal tools",
+            "Accomplishments":[
+                "Highly Valued by team for efficiency and quality of work"
             ]
         }
     ],

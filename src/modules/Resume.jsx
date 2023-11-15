@@ -25,6 +25,8 @@ function Resume(){
             return (
             <li>
                 <p>Location: {experience.location}</p>
+                <p>Duration: {experience.duration}</p>
+                <p>Position: {experience.position}</p>
                 <p>Accomplishments:</p>
                 <ul className="ml-8">
                     {experience.Accomplishments.map((accomplished)=>{return <li>{accomplished}</li>})}
