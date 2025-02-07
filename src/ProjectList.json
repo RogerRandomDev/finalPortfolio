@@ -13,6 +13,18 @@
             "projectLink":"https://rogerrandomdev.github.io/jsengine1/"
         },
         {
+            "name":"Marionette",
+            "projectType":"Face Tracker",
+            "imageLink":"https://raw.githubusercontent.com/RogerRandomDev/Marionette/refs/heads/main/marionetteLogo.png",
+            "projectLink":"https://github.com/RogerRandomDev/Marionette"
+        },
+        {
+            "name":"Fancy Animated Controls (FACS)",
+            "projectType":"Godot Plugin",
+            "imageLink":"https://raw.githubusercontent.com/RogerRandomDev/FancyControls/refs/heads/master/addons/FancyControls/Controls/AnimatedBoxContainer/AnimatedBoxContainer.png",
+            "projectLink":"https://github.com/RogerRandomDev/FancyControls"
+        },
+        {
             "name":"Control3D",
             "projectType":"Godot Plugin",
             "imageLink":"https://raw.githubusercontent.com/RogerRandomDev/Control3D/dfdc37a41e09250fea9cda0b26f8a9d1bb52c3f8/Control3Dicon.svg",
@@ -23,18 +35,6 @@
             "projectType":"WIP Game",
             "imageLink":"https://pbs.twimg.com/profile_images/1631591220630757377/nKSCjeS3_400x400.png",
             "projectLink":"https://github.com/RogerRandomDev/ALARv3"
-        },
-        {
-            "name":"Card Combat",
-            "projectType":"Dropped Game",
-            "imageLink":"https://pbs.twimg.com/profile_images/1631591220630757377/nKSCjeS3_400x400.png",
-            "projectLink":"https://github.com/RogerRandomDev/card_combat_v2"
-        },
-        {
-            "name":"Fate Game(ACTIVE)",
-            "projectType":"WIP Game",
-            "imageLink":"https://pbs.twimg.com/profile_images/1631591220630757377/nKSCjeS3_400x400.png",
-            "projectLink":"https://github.com/RogerRandomDev/FateGame"
         },
         {
             "name":"Wor(l)d Swap",

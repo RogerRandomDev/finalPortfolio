@@ -1,41 +1,71 @@
 {
-    "Name":"Roger T. Grange",
-    "Email":"rogertgrange@gmail.com",
-    "PhoneNumber":"623-451-2201",
-    "workExperience":[
+    "Name": "Roger T. Grange",
+    "Email": "rogertgrange@gmail.com",
+    "PhoneNumber": "623-451-2201",
+    "workExperience": [
         {
-            "location":"McDonalds",
-            "duration":"june 2022-july 2023",
-            "position":"crew member",
-            "Accomplishments":[
-                "Increased customer satisfaction"
-            ]
-        },
-        {
-            "location":"Ziff Davis",
-            "duration":"July 2023-November 2023",
-            "position":"Intern, ZMG internal tools",
-            "Accomplishments":[
-                "Highly Valued by team for efficiency and quality of work"
+            "location": "Ziff Davis Media Group, NY",
+            "duration": "July 2023 - November 2023",
+            "position": "Intern-Software Development, full-stack",
+            "Accomplishments": [
+                "Worked to improve internal tools and management systems",
+                "Improved workflow and database management interfaces by making them automatically format and adjust based on desired information to be presented",
+                "Improved deployment efficiency of GitHub actions by integrating previously manual AWS tasks",
+                "Secured credential management by locking down administrative page access"
             ]
         }
     ],
-    "skills":[
-        "Fast Learner",
-        "Team Player",
-        "Hard Worker",
-        "Creative"
+    "skills": [
+        "Web Front-end: TypeScript, ReactJS",
+        "Back-end Services: Python, Java, DotNet / C#",
+        "Embedded: Arduino / C++",
+        "Databases: MongoDB, PostgreSQL, MySQL",
+        "Gaming: Godot / GDScript, Godot / C#"
     ],
-    "achievements":[
-        "Reached Nationals for FBLA Twice",
-        "Placed in State for FBLA Twice",
-        "First place in Regionals for FBLA in Computer Game and Simulation Programming",
-        "Second place in Regionals for FBLA in Marketing",
-        "Third place in Regionals for FBLA in Entrepeneurship",
-        "4th Place in State for FBLA in Marketing",
-        "Worked as Secretary for West-MEC NE Coding student council"
+    "achievements": [
+        "FBLA (Future Business Leaders of America)",
+        "Student body Secretary in the FBLA Coding program",
+        "Represented WestMEC at the 2022 FBLA Game and Simulation Programming Competition. Placed 1st in regionals and 4th at state in the Marketing category. Selected for nationals, but didn’t place",
+        "Represented WestMEC at the 2023 FBLA Game and Simulation Programming Competition. Placed 8th at the state level. Selected for nationals, but didn’t place"
     ],
-    "certifications":[
-        "MTA Certification"
-    ]
+    "certifications": [
+        "Certified Microsoft Technology Associate",
+        "Certified JavaScript Developer"
+    ],
+    "education": [
+        {
+            "institution": "West-MEC Northeast Campus, Phoenix AZ",
+            "duration": "August 2021 – May 2023",
+            "degree": "Full-stack web developer, mobile app developer"
+        },
+        {
+            "institution": "Glendale Community College, Glendale AZ",
+            "duration": "January 2016 - July 2023",
+            "degree": "Associates of Science, Emphasis on Computer Science"
+        },
+        {
+            "institution": "Grand Canyon University, AZ",
+            "duration": "August 2023 - Current",
+            "degree": "Working towards Bachelor of Science, Computer Science"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Fancy Animated Controls (FACS)",
+            "description": "Created the Fancy Animated Controls (FACS) addon and UI for adding animation options to normally static objects",
+            "link": "https://github.com/RogerRandomDev/FancyControls"
+        },
+        {
+            "name": "Marionette",
+            "description": "Created Marionette using C# to integrate face and facial feature tracking via OpenSeeFace with the Godot gaming engine",
+            "link": "https://github.com/RogerRandomDev/Marionette"
+        }
+    ],
+    "workPortfolio": {
+        "GitHub": "https://github.com/RogerRandomDev",
+        "Codewars": "https://www.codewars.com/users/RogerRandom",
+        "itch.io": "https://rogerrandomdev.itch.io/",
+        "Godot Assets": "https://godotengine.org/asset-library/asset?filter=RRandom",
+        "LinkedIn": "https://www.linkedin.com/in/roger-grange-186ba7277/"
+    }
 }

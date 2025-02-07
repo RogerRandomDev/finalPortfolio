@@ -1,5 +1,6 @@
 import {useEffect,useState} from 'react'
 import anime from 'animejs';
+import BackgroundFade from "./TitleBackFade";
 
 
 function TitleCard(){
@@ -47,7 +48,7 @@ function TitleCard(){
         <>
             
             <div className="min-w-[100vw] min-h-[100vh] max-w-[100vw] max-h-[100vh] overflow-y-hidden">
-                <img className="-mb-[100vh] min-w-[100vw] min-h-[100vh] h-[100vh]" src="https://i.gifer.com/J4o.gif" />
+                <BackgroundFade/>
                 <div className="mt-[40vh] -mt-[5rem] mx-auto w-max filter backdrop-blur-sm animatedTitle">
                     <h1 className="text-6xl myName flex flex-row center">Roger Grange</h1>
                     <p className="myDesc flex flex-row center">Maniacal plan to be determined</p>
